@@ -40,6 +40,11 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
   box-sizing: border-box;
 }
 
+
+body{
+  background-color: rgb(244, 231, 231);
+}
+
 nav{
   width: 100%;
   background-color: rgb(245, 120, 120);
@@ -62,4 +67,11 @@ li{
 
 li:hover{
   background-color: rgb(244, 143, 143);
+}
+
+h1{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 52px;
+  font-weight: 600;
 }
