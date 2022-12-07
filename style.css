@@ -58,11 +58,12 @@ li{
   justify-content: center;
   align-items: center;
   width: 200px;
-  height: 50px;
+  height: 60px;
   background-color: rgb(245, 120, 120);
   font-size: 18px;
   text-transform: capitalize;
   color: black;
+  cursor: pointer;
 }
 
 li:hover{
@@ -74,4 +75,75 @@ h1{
   text-align: center;
   font-size: 52px;
   font-weight: 600;
+}
+
+
+/* portfolio section */
+.heading{
+  margin-top: 20px;
+}
+.img-section{
+  display: flex;
+  align-items: center;
+  background-color: rgb(238, 221, 221);
+  padding: 20px;
+}
+.main-portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;}
+
+.img-container{
+  max-width: 800px;
+  max-height: 750px;
+  overflow: hidden;
+  margin: 20px 40px;
+}
+
+.img-line{
+  display: flex;
+  overflow: hidden;
+  transition: 0.7s ease;
+}
+
+.img{
+  width: 800px;
+  height: 550px;
+  cursor: pointer;
+}
+
+.btn-img{
+  width: 80px;
+  height: 80px;
+  background-color: rgb(245, 120, 120);
+  color: aliceblue;
+  font-weight: 800;
+  font-size: 45px;
+  border-radius: 50%;
+  transition: 0.7s ease-in-out;
+}
+
+.btn-img:hover{
+  background-color: rgb(244, 143, 143);
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer-headig{
+  margin-right: 20px;
+}
+
+.git-mark{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
