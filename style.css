@@ -1,3 +1,8 @@
+:root {
+  --main-background-color: rgb(245, 120, 120);
+  --hover-background-color: rgb(244, 143, 143);
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -47,57 +52,232 @@ body{
 
 nav{
   width: 100%;
-  background-color: rgb(245, 120, 120);
+  background-color: var(--main-background-color)
 }
+
 ul{
   display: flex;
 }
 
-li{
+.navigation-list{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 200px;
   height: 60px;
-  background-color: rgb(245, 120, 120);
+  background-color: var(--main-background-color);
   font-size: 18px;
   text-transform: capitalize;
   color: black;
   cursor: pointer;
 }
 
-li:hover{
-  background-color: rgb(244, 143, 143);
+.navigation-list:hover{
+  background-color: var(--hover-background-color);
 }
 
 h1{
   margin-top: 50px;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 52px;
   font-weight: 600;
 }
+/* About me section*/
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.title{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
 
+.subtitle{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+.about-me_section{
+  display: flex;
+  align-items: center;
+  margin: 0 auto 40px;
+  width: 80%;
+}
+
+.my-photo{
+  width: 330px;
+  height: 350px;
+  border-radius: 50%;
+}
+
+.about-me_text{
+  width: 70%;
+  font-size: 25px;
+  text-indent: 10px;
+  line-height: 1.4;
+  margin-left: 40px;
+  
+}
+
+.skills-list_container{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: var(--main-background-color);
+  border-radius: 50px;
+  box-shadow: -0.5em 0 .8em var(--hover-background-color);
+}
+
+.my-skills_section,.language-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  background-color: rgb(120, 80, 80);
+}
+
+.language-section{
+  padding-top: 0;
+  padding-left: 250px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.list-languages{
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  font-weight: 600;
+  background-color: rgb(221, 197, 197);
+  padding: 80px;
+  line-height: 1.8;
+  border-radius: 0 120px / 150px;
+  border: 3px solid #fff;
+  box-shadow: -0.5em 0 .8em var(--hover-background-color);
+}
+
+.container-language{
+  display: flex;
+ 
+}
+.pc-img{
+  position: absolute;
+  right: 200px;
+  bottom: 60px;
+  width: 500px;
+  height: 500px;
+}
+
+.skills-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-background-color);
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 22px;
+  margin-right: 50px;
+  cursor: pointer;  
+}
+
+.skills-list:hover{
+ 
+  transform: translateY(-30px);
+  transition: 0.2s ease;
+  
+}
+
+.skills-list:first-child{
+  margin-left: 50px;
+}
+
+.contact-section{
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+  width: 100%;
+  background-color:  rgb(238, 221, 221);
+}
+
+.contact-section_container{
+  max-width: 600px;
+  background-color:  var(--main-background-color);
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: -0.5em 0 .8em var(--hover-background-color);
+  padding: 20px;
+}
+
+.btn-more{
+  width: 250px;
+  height: 60px;
+  font-size: 22px;
+  border-radius: 30px;
+  background-color: var(--main-background-color)
+}
+
+.btn-more:hover{
+  background-color: var(--hover-background-color);
+}
+
+.project-section{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(238, 221, 221);
+  padding: 80px 0;
+}
 /* portfolio section */
+
+.container-project{
+  background-color: rgb(209, 156, 156);
+} 
+
 .heading{
   margin-top: 20px;
 }
+
+.active-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color:  rgb(244, 143, 143);
+}
+
 .img-section{
   display: flex;
   align-items: center;
   background-color: rgb(238, 221, 221);
-  padding: 20px;
+  padding: 80px 100px;
+  margin: 80px 0;
 }
 .main-portfolio{
   display: flex;
   flex-direction: column;
-  align-items: center;}
+  align-items: center;
+  padding: 100px 0;
+}
 
 .img-container{
   max-width: 800px;
   max-height: 750px;
   overflow: hidden;
   margin: 20px 40px;
+  box-shadow: -1.2em 1.2em .8em var(--hover-background-color);
 }
 
 .img-line{
@@ -131,10 +311,11 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
+  height: 80px;
   background-color: #000;
   color: #fff;
   font-size: 20px;
+  top: 0;
 }
 
 .footer-headig{
