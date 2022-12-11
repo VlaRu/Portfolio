@@ -10,14 +10,28 @@
 <body>
   <div class="container container-project">
     <header>
-      <nav>
-        <ul>
+      <nav class="navigation-bar">
+        <ul class="list-container">
           <li class="navigation-list"><a href="index.html">About</a></li>
           <li class="navigation-list"><a href="projects.html" class="active-nav">Projects</a></li>
           <li class="navigation-list"><a href="index.html#skills">Skills</a></li>
           <li class="navigation-list"><a href="index.html#contact">contact</a></li>
         </ul>
       </nav>
+      <nav class="burger-navigation-bar">
+        <ul class="burger-list-container">
+          <li class="burger-navigation-list"><a href="index.html" >About</a></li>
+          <li class="burger-navigation-list"><a href="projects.html" class="active-nav">Projects</a></li>
+          <li class="burger-navigation-list"><a href="index.html#skills">Skills</a></li>
+          <li class="burger-navigation-list"><a href="index.html#contact">contact</a></li>
+        </ul> 
+      </nav>
+      <div class="burger">
+        <span class="burger_line burger_line1"></span>
+        <span class="burger_line burger_line2"></span>
+        <span class="burger_line burger_line3"></span>
+        <span class="burger_line burger_line4"></span>
+     </div>
     </header>
     <main class="main-portfolio">
       <h1 class="heading">My project</h1>
@@ -25,11 +39,11 @@
         <button class="btn-img btn-left">&#60</button>
         <div class="img-container">
           <div class="img-line">
-            <a href="https://rolling-scopes-school.github.io/vlaru-JSFE2022Q3/online-zoo/pages/main/main.html" target="_blank"><img src="/images/onlinezoo.png" alt="" class="img"></img></a>
-            <a href="#"><img src="/images/shelter.png" alt="" class="img"></img></a>
-            <a href="https://rolling-scopes-school.github.io/vlaru-JSFE2022Q3/songbird/main.html" target="_blank"><img src="/images/songbird.png" alt="" class="img"></img></a>
-            <a href="https://rolling-scopes-school.github.io/vlaru-JSFEPRESCHOOL2022Q2/travel/" target="_blank"><img src="/images/travel.png" alt="" class="img"></img></a>
-            <a href="https://vermillion-souffle-27bbf8.netlify.app/" target="_blank"><img src="/images/weatherApp.png" alt="" class="img"></img></a>
+            <a href="https://rolling-scopes-school.github.io/vlaru-JSFE2022Q3/online-zoo/pages/main/main.html" target="_blank"><img src="./images/onlinezoo.png" alt="" class="img"></img></a>
+            <a href="#"><img src="./images/shelter.png" alt="" class="img"></img></a>
+            <a href="https://rolling-scopes-school.github.io/vlaru-JSFE2022Q3/songbird/main.html" target="_blank"><img src="./images/songbird.png" alt="" class="img"></img></a>
+            <a href="https://rolling-scopes-school.github.io/vlaru-JSFEPRESCHOOL2022Q2/travel/" target="_blank"><img src="./images/travel.png" alt="" class="img"></img></a>
+            <a href="https://vermillion-souffle-27bbf8.netlify.app/" target="_blank"><img src="./images/weatherApp.png" alt="" class="img"></img></a>
           </div>
         </div>  
         <button class="btn-img btn-right">&#62</button>
@@ -38,10 +52,11 @@
     </main>
     <footer>
       <p class="footer-headig">Created for SheCodes curse 2022</p>
-      <a href="https://github.com/VlaRu?tab=repositories" target="_blank"><img src="/images/GitHub-Mark.png" alt="" class="git-mark"></a>  
+      <a href="https://github.com/VlaRu?tab=repositories" target="_blank"><img src="./images/GitHub-Mark.png" alt="" class="git-mark"></a>  
       <span>vlaru</span>   
     </footer>
   </div>
   <script src="script.js"></script>
+  <script src="burger.js"></script>
 </body>
 </html>
